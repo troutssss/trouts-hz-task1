@@ -1,12 +1,12 @@
 package com.example.hzz6.troutstask1
 
+import com.google.gson.annotations.SerializedName
+import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Headers
 import retrofit2.http.Query
-import com.google.gson.annotations.SerializedName
-import retrofit2.Call
 
 
 const val CLIENT_ID = "jJXGy7VHbKld3ZJDUFOw"
@@ -50,7 +50,7 @@ data class MoviesApi(
     @SerializedName("start")
     val start: Int,
     @SerializedName("total")
-    val total: Int
+    val total: Int 
 )
 
 data class Movie(
